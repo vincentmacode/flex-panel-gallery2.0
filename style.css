@@ -2,3 +2,42 @@ html {
     font-family: "Roboto Slab", serif;
     font-weight: 900;
 }
+
+body {
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.panels {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.panel {
+    background: #6B0F9C;
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+    color: white;
+    text-align: center;
+    align-items: center;
+    transition:
+        font-size 0.7s cubic-bezier(0,61, -0.19, 0.7, -0.11),
+        flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        background 0.2s;
+    font-size: 20px;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+    .panel1 { background-image:url(https://images.unsplash.com/photo-1768928969717-c39ca2cf6ed7?q=80&w=1483&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); }
+    .panel2 { background-image:url(https://images.unsplash.com/photo-1768593049340-6e50351b4b2f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI2fGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D); }
+    .panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
+    .panel4 { background-image:url(https://plus.unsplash.com/premium_photo-1682969053384-df7b3cdb377d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGN5Y2xpbmd8ZW58MHx8MHx8fDA%3D); }
+    .panel5 { background-image:url(https://plus.unsplash.com/premium_photo-1764190656884-6f6194616995?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMzN3w2c01WalRMU2tlUXx8ZW58MHx8fHx8); }
